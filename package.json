@@ -1,0 +1,23 @@
+{
+  "name": "rbx-remoteevent",
+  "version": "1.0.0",
+  "description": "Typed Remote Event support for roblox-ts.",
+  "main": "out/init.lua",
+  "typings": "out/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karikera/rbx-remoteevent.git"
+  },
+  "scripts": {},
+  "keywords": [
+    "roblox-ts",
+    "roblox",
+    "remoteevent"
+  ],
+  "author": "karikera",
+  "license": "ISC",
+  "dependencies": {
+    "rbx-services": "^1.0.22",
+    "rbx-types": "^1.0.182"
+  }
+}
