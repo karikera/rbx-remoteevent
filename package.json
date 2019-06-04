@@ -1,6 +1,6 @@
 {
-  "name": "rbx-remoteevent",
-  "version": "1.0.1",
+  "name": "@rbxts/remoteevent",
+  "version": "1.0.2",
   "description": "Typed Remote Event support for roblox-ts.",
   "main": "main.lua",
   "typings": "main.d.ts",

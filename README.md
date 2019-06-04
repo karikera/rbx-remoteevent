@@ -37,7 +37,7 @@ server functions will be `OnServerEvent:Connection` functions.
 ```typescript
 
 // Define Remote Event Reference
-export const remoteEventsReference = {
+export const remoteEventsDefinations = {
     client:{ // Server to Client
         youAre(a:number, b:string, c:boolean, name:string){},
         someoneJoined(a: number, b:string, c:boolean, name:string){},
@@ -52,9 +52,9 @@ export const remoteEventsReference = {
 ## client.ts
 ```typescript
 import { createClientRemoteEvents } from "rbx-remoteevent";
-import { remoteEventsReference } from "./common";
+import { remoteEventsDefinations } from "./common";
 
-const remoteEvent = createClientRemoteEvents(remoteEventsReference);
+const remoteEvent = createClientRemoteEvents(remoteEventsDefinations);
 
 
 // Receive from Server
@@ -70,9 +70,9 @@ remoteEvent.server.whoAmI(math.random(), 'string', true);
 ## server.ts
 ```typescript
 import { createServerRemoteEvents } from "rbx-remoteevent";
-import { remoteEventsReference } from "./common";
+import { remoteEventsDefinations } from "./common";
 
-const remoteEvent = createServerRemoteEvents(remoteEventsReference);
+const remoteEvent = createServerRemoteEvents(remoteEventsDefinations);
 
 
 // Receive from Client
